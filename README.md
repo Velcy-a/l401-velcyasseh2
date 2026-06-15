@@ -7,10 +7,10 @@
 Fotos de las vistas:
 
 1. Matriz
-_![vista matriz](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Matriz.png)
+![vista matriz](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Matriz.png)
 
 2. Eje X
-_![vista eje x](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20X.png)
+![vista eje x](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20X.png)
 
 3. Eje Y
-_![vista eje y](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20Y.png)
+![vista eje y](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20Y.png)
