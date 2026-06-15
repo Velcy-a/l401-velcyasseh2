@@ -38,6 +38,22 @@
             margin-bottom: 15px;
         }
 
+        #menu-navegacion { 
+            margin-top: 30px; 
+            display: flex; 
+            gap: 20px; 
+        }
+
+        #link-principal, #link-alternativo {
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
 
         /* Fila 1 (Fila 1: Y > 4.5) */
         #c1 { background-color: {% if ejeX >= 4.5 and ejeY > 4.5 %} #99cc66 {% else %} gray {% endif %}; }
