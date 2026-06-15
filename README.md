@@ -13,4 +13,5 @@ Fotos de las vistas:
 ![vista eje x](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20X.png)
 
 3. Eje Y
+
 ![vista eje y](https://github.com/Velcy-a/l401-velcyasseh2/blob/main/capturas/Eje%20Y.png)
