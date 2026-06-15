@@ -1,3 +1,3 @@
 # Evaluación N°3 DCSH01
-## Hecha por Jaime Fuentes.
-### Visualización de Eje X - Y además de Matrix 4x4
+## Visualización de Eje X - Y / Visualización en Matriz 4x4
+### Hecha por Jaime Fuentes
