@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2">
+    <title>Solo Eje Y</title>
+    <style>
+        #hoja {
+            background-color: rgb(153, 102, 204, 0.5);
+            font-size: 20px;
+            font-family: "Times New Roman", cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #tabla-y { 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+
+        #y1, #y2, #y3, #y4 {
+            width: 60px; 
+            height: 60px; 
+            border: 1px solid black;
+            text-align: center; 
+            vertical-align: middle;
+        }
+
+        #descripcion {
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 15px;
+        }
+
+        #menu-navegacion { 
+            margin-top: 30px; 
+            display: flex; 
+            gap: 20px; 
+        }
+
+        #link-matriz, #link-eje {
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        /* Lógica de color vertical basada en rangos de 4.5 para Y */
+        #y1 { background-color: {% if ejeY > 4.5 %} #99cc66 {% else %} gray {% endif %}; }
+        #y2 { background-color: {% if ejeY >= 0 and ejeY < 4.5 %} #99cc66 {% else %} gray {% endif %}; }
+        #y3 { background-color: {% if ejeY >= -4.5 and ejeY < 0 %} #99cc66 {% else %} gray {% endif %}; }
+        #y4 { background-color: {% if ejeY < -4.5 %} #99cc66 {% else %} gray {% endif %}; }
+    </style>
+</head>
+<body id="hoja">
+
+    <h1>Monitoreo Individual: Eje Y</h1>
+    <p id="descripcion">
+        Esta sección analiza exclusivamente el desplazamiento vertical del sensor. La columna se divide en 4 bloques de 4.5 unidades de rango cada uno.
+    </p>
+
+    <p>Eje Y = {{ ejeY }}</p>
+
+    <table id="tabla-y">
+        <tr><td id="y1">Y1</td></tr>
+        <tr><td id="y2">Y2</td></tr>
+        <tr><td id="y3">Y3</td></tr>
+        <tr><td id="y4">Y4</td></tr>
+    </table>
+
+    <nav id="menu-navegacion">
+        <a id="link-matriz" href="/">Volver a Matriz</a>
+        <a id="link-eje" href="/ejex">Ver Eje X</a>
+    </nav>
+
+</body>
+</html>
